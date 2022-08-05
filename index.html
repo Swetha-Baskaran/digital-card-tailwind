@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- tailwind css -->
+		<link
+			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<!-- local css -->
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<!-- favicon -->
+		<link rel="icon" href="https://i.postimg.cc/NfYXp1jP/Logo.png" />
+		<title>Digital Card</title>
+		<!-- swiper js -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<nav class="mb-9 py-4 lg:text-2xl style-nav">
+			<div class="flex items-center justify-between lg:py-2 lg:px-8">
+				<div class="navbar-text lg:px-5">
+					<img
+						src="https://i.postimg.cc/NfYXp1jP/Logo.png"
+						alt="celebrare logo"
+						class="style-logo px-5"
+					/>
+				</div>
+				<div class="lg:block hidden">
+					<ol class="flex justify-evenly items-center">
+						<li class="px-5"><a href="#">Wedding Cards</a></li>
+						<li class="px-5"><a href="#">Birthday Cards</a></li>
+						<li class="px-5"><a href="#">Feeling Cards</a></li>
+						<li class="px-5"><a href="#">Anniversary Cards</a></li>
+					</ol>
+				</div>
+				<div class="px-5">
+					<span>Login</span>
+					<span>|</span>
+					<span>Signup</span>
+				</div>
+			</div>
+		</nav>
+		<header class="p-0 lg:p-5 mx-9 mt-16">
+			<div
+				class="style-detials-card text-white text-center py-9 mx-12"
+				style="background: url('https://i.postimg.cc/2j19CNdf/Background.jpg')"
+			>
+				<div
+					class="title pb-56 pt-6 lg:pb-64 lg:pt-12 lg:mx-24 mx-6 text-3xl lg:text-5xl"
+				>
+					Digital Card Details
+				</div>
+			</div>
+			<div
+				class="style-card-details flex flex-col justify-center items-center lg:grid lg:grid-cols-7 lg:gap-x-20 lg:justify-between py-12 px-12 md:py-20 shadow-xl border-2 border-gray-800 -mt-56 md:mx-24 mx-6 sm:mx-9 bg-white"
+			>
+				<!-- carousel part -->
+
+				<div class="swiper mySwiper col-span-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img
+								src="https://i.postimg.cc/QM8cCjcx/Page1.jpg"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="https://i.postimg.cc/3wtmDzZj/Page2.jpg"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="https://i.postimg.cc/FR1cbGPM/Page3.jpg"
+							/>
+						</div>
+					</div>
+					<br />
+				</div>
+
+				<!-- description -->
+				<div class="col-span-3">
+					<div class="text-center py-12 md:py-5 text-5xl">Luxary...</div>
+					<div class="flex justify-between items-end">
+						<div>
+							<span class="text-4xl">$499</span>
+							<span class="text-green text-2xl line-through">$2000</span>
+						</div>
+						<div class="text-green-400 text-3xl">75%Off</div>
+					</div>
+					<p class="py-5 text-xl lg:text-left text-center">
+						Donec eu ornare mi. Sed finibus condimentum mauris, ut dictum
+						eros maximus vitae. Nullam condimentum tortor ac elit feugiat
+						iaculis. Aenean mauris nisl, blandit
+					</p>
+					<button
+						class="style-try-this-card bg-black text-white text-2xl w-full p-5 my-4"
+					>
+						Try this Card
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="p-5 mb-14">
+			<div class="text-center py-8 text-4xl">Features</div>
+			<div
+				class="style-features flex lg:flex-row lg:justify-evenly lg:items-center flex-col p-4 shadow-xl border-2 border-gray-900 md:mx-24 sm:mx-9 mt-9 mb-12"
+			>
+				<div class="inline-flex justify-center items-center flex-col py-5">
+					<div
+						class="style-dummy-card bg-gray-100 rounded-full shadow-xl"
+						style="background: url('https://i.postimg.cc/2j19CNdf/Background.jpg')"
+					></div>
+					<div class="text-xl py-5 px-4 text-center">
+						Create your card in just 5 mins
+					</div>
+				</div>
+				<div class="inline-flex justify-center items-center flex-col py-5">
+					<div
+						class="style-dummy-card bg-gray-100 rounded-full shadow-xl"
+						style="background: url('https://i.postimg.cc/2j19CNdf/Background.jpg')"
+					></div>
+					<div class="text-xl py-5 px-4 text-center">
+						Customize the Text with "Edit this Page" Option
+					</div>
+				</div>
+				<div class="inline-flex justify-center items-center flex-col py-5">
+					<div
+						class="style-dummy-card bg-gray-100 rounded-full shadow-xl"
+						style="background: url('https://i.postimg.cc/2j19CNdf/Background.jpg')"
+					></div>
+					<div class="text-xl py-5 px-4 text-center">
+						Editing is available after purchase also
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				effect: "coverflow",
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: "auto",
+				coverflowEffect: {
+					rotate: 0,
+					stretch: 0,
+					depth: 100,
+					modifier: 2,
+					slideShadows: true,
+				},
+			});
+		</script>
+	</body>
+</html>

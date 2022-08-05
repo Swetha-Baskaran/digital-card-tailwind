@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body{
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 111;
+}
+.style-nav{
+    box-shadow: 0 1px 18px #00000038;
+}
+.style-logo{
+    width: 9rem;
+    height: 2.5rem;
+}
+
+.style-features{
+    border-radius: 40px;
+}
+
+.style-dummy-card{
+    width: 200px;
+    height: 200px;
+}
+
+.style-detials-card{
+    border-radius: 40px;
+}
+
+.style-card-details{
+    border-radius: 40px;
+    /* padding: 5rem; */
+}
+
+.style-wedding-card{
+    width: 50%;
+    height: 90%;
+    padding: 5px;
+    border: 1.5px solid darkgray;
+    background-color: white;
+}
+
+.style-try-this-card{
+    border-radius: 30px;
+}
+
+.style-card{
+    width: 18rem;
+    height: 26rem;
+    margin: 1.4rem 0;
+    background: white;
+    box-shadow: 0 0 0 9px white, 0 0 0 10px black;
+    border-radius: 3px;
+}
+/* swiper js */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+}
+.swiper-slide-active{
+    filter: blur(0px);
+}
+.swiper-slide img {
+  display: block;
+  height: 34rem; 
+  box-shadow: 0 0 0 9px white, 0 0 0 10px black;
+  border-radius: 3px;
+}
+
+.swiper-wrapper{
+    width: 25rem !important;
+}
+.swiper-pagination{
+   transform: translateY(15px) !important;   
+}
+.swiper-3d .swiper-slide-shadow-left{
+    background-image: none !important;
+}
+.swiper-3d .swiper-slide-shadow-right{
+    background-image: none !important;
+}
+
+@media (max-width: 500px) {
+    .style-wedding-card{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border: 1.5px solid darkgray;
+        background-color: white;
+    }
+    .swiper-wrapper{
+        width: 20rem !important;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .style-detials-card{
+        border-radius: 5px;
+        margin: 2rem;
+    }
+    .style-card-details, .style-features{
+        border-radius: 0;
+        padding: 1rem;
+    }
+    .swiper-wrapper{
+        width: 25rem !important;
+    }
+    .swiper-slide img {
+        display: block;
+        height: 34rem; 
+      }
+}
